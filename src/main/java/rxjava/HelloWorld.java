@@ -8,6 +8,11 @@ import io.reactivex.Flowable;
 import io.reactivex.FlowableEmitter;
 import io.reactivex.FlowableOnSubscribe;
 
+/**
+ * 
+ * @author 张大川
+ *
+ */
 public class HelloWorld {
 	public static void main(String[] args) {
 		Flowable<String> flowable = Flowable.create(new FlowableOnSubscribe<String>() {
