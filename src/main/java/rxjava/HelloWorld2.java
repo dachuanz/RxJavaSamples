@@ -10,7 +10,7 @@ import io.reactivex.FlowableOnSubscribe;
 /**
  * 
  * 
- * @author thinkpad
+ * @author 张大川
  *
  */
 public class HelloWorld2 {
@@ -18,7 +18,8 @@ public class HelloWorld2 {
 		
 		/**
 		 * Flowable  实现 Publisher接口
-		 * 
+		   
+		 * Publisher 为发布者的含义
 		 */
 		Flowable<String> flowable = Flowable.create(new FlowableOnSubscribe<String>() {
 
