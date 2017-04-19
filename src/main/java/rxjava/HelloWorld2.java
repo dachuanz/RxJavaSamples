@@ -1,4 +1,4 @@
-package rxjava;
+﻿package rxjava;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
@@ -10,7 +10,7 @@ import io.reactivex.FlowableOnSubscribe;
 /**
  * 
  * 
- * @author thinkpad
+ * @author 张大川
  *
  */
 public class HelloWorld2 {
@@ -18,7 +18,8 @@ public class HelloWorld2 {
 		
 		/**
 		 * Flowable  实现 Publisher接口
-		 * 
+		   
+		 * Publisher 为发布者的含义
 		 */
 		Flowable<String> flowable = Flowable.create(new FlowableOnSubscribe<String>() {
 
@@ -81,7 +82,7 @@ public class HelloWorld2 {
 			}
 		};
 
-		flowable.subscribe(subscriber);
+		flowable.subscribe(subscriber);// 一个发布者可以为多个订阅者订阅
 		flowable.subscribe(subscriber2);
 	}
 }
