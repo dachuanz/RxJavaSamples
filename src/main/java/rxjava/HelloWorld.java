@@ -1,4 +1,4 @@
-package rxjava;
+﻿package rxjava;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
@@ -54,6 +54,6 @@ public class HelloWorld {
 
 		};
 
-		flowable.subscribe(subscriber);
+		flowable.subscribe(subscriber); // 订阅
 	}
 }
